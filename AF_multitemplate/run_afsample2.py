@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # Copyright 2021 DeepMind Technologies Limited
 # Copyright 2024 WallnerLab (Linköping University, Sweden)
 #

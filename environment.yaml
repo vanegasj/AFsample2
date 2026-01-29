@@ -4,10 +4,11 @@ channels:
   - bioconda
   - nvidia
 dependencies:
+  - python=3.10
   - aria2
-  - openmm=7.5.1
-  - pdbfixer=1.7
-  - cudnn=8.2.1.32
+  - openmm=8.2.0
+  - pdbfixer
+  - cudnn
   - tmalign
   - kalign3=3.2.2
   - hhsuite=3.3.0

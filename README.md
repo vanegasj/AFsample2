@@ -1,3 +1,30 @@
+# Vanegaslab fork of AFsample2
+
+Instructions below for a manual installation using conda and pip.
+
+1. If you don't have python/conda installed, download and run the latest miniforge installer from <https://github.com/conda-forge/miniforge/releases>
+2. Clone this git repository
+
+    git clone https://github.com/vanegasj/AFsample2.git
+    cd AFsample2
+
+3. Installation instructions for working on the base conda environment
+
+    conda env update -n base --file=environment.yaml
+    python -m pip install -r requirements.txt
+
+4. Alternate instructions to install on a conda environment called afsample2
+
+    conda env create -n afsample2 --file=environment.yaml
+    conda activate afsample2
+    python -m pip install -r requirements.txt
+
+5. Add the `AF_multitemplate` and `src` folders to your PATH environmental variable
+
+6. If you have not downloaded the AF2 databases, use the script `AF_multitemplate/scripts/download_all_data.sh`
+
+See the documentation below for running the AFsample2 python script.
+
 # AFsample2
 Introducing a way to induce diversity in the AF2 ensemble by spanning the conformational ensemble and identifying possible states.
 ![20240226_mov.gif](20240226_mov.gif)

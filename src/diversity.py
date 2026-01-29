@@ -1,4 +1,4 @@
-#!/bin/python
+#!/usr/bin/env python
 # Copyright 2024 Yogesh Kalakoti (WallnerLab), Linkoping University, Sweden
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
