@@ -4,24 +4,24 @@ Instructions below for a manual installation using conda and pip.
 
 1. If you don't have python/conda installed, download and run the latest miniforge installer from <https://github.com/conda-forge/miniforge/releases>
 2. Clone this git repository
+```
+git clone https://github.com/vanegasj/AFsample2.git
+cd AFsample2
+```
+4. Installation instructions for working on the base conda environment
+```
+conda env update -n base --file=environment.yaml
+python -m pip install -r requirements.txt
+```
+5. Alternate instructions to install on a conda environment called afsample2
+```
+conda env create -n afsample2 --file=environment.yaml
+conda activate afsample2
+python -m pip install -r requirements.txt
+```
+6. Add the `AF_multitemplate` and `src` folders to your PATH environmental variable
 
-    git clone https://github.com/vanegasj/AFsample2.git
-    cd AFsample2
-
-3. Installation instructions for working on the base conda environment
-
-    conda env update -n base --file=environment.yaml
-    python -m pip install -r requirements.txt
-
-4. Alternate instructions to install on a conda environment called afsample2
-
-    conda env create -n afsample2 --file=environment.yaml
-    conda activate afsample2
-    python -m pip install -r requirements.txt
-
-5. Add the `AF_multitemplate` and `src` folders to your PATH environmental variable
-
-6. If you have not downloaded the AF2 databases, use the script `AF_multitemplate/scripts/download_all_data.sh`
+7. If you have not downloaded the AF2 databases, use the script `AF_multitemplate/scripts/download_all_data.sh`
 
 See the documentation below for running the AFsample2 python script.
 
